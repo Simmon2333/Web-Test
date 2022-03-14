@@ -1,0 +1,90 @@
+/* CSS Document */
+.background{
+  width: 100%;
+  height: 100vh;
+  animation: move 8s  infinite; /*自定义动画名称*/
+  /*!move：动画名称，10s：执行时间 
+     ease：执行的函数，infinite：代表执行次数，这里指无限次*!*/
+}
+@keyframes move {
+/**注意这几个图片大小一定要一样，否则会出现抖动现象*/
+/*这里的0%50%100%是相对于执行时间的，最后一个图片先播放*/
+  0%{
+    background: url('images/1.jpg') no-repeat;
+  	background-size:100% 100%;
+  	}
+  30%{
+  	background: url('images/2.jpg') no-repeat;
+  	background-size:100% 100%; 
+  	}
+  100%{
+  	background: url('images/77.jpeg') no-repeat;
+  	background-size:100% 100%; 
+  	}
+}
+a {font-family:黑体;
+	color:red;
+	font-size:20px;}
+hhh {text-align: center; 
+	font-family:黑体;
+	color:black;
+	font-size:25px;}
+.picbox{
+    float:left;
+    width:400px;
+    height:290px;
+	padding-left: 150px;
+    margin:auto;
+    margin:5px;
+    position:relative;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition:1s;
+}
+.picbox:hover{
+    transform:rotateY(180deg);
+}
+.box{
+    width:320px;
+    height:290px;
+    position:absolute;
+    }
+.front{
+    border:2px solid #ddd;
+    box-shadow:10px 10px 10px #aaa;
+}
+.back{
+    -webkit-transform: rotateY(180deg);
+    -ms-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    background:#170708;
+	font-size: 15px;
+    border:2px solid #ddd;
+}
+.back h2{
+    color: white;
+    text-align: center;
+}
+audio {
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+}
+
+button {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    width: 80px;
+    height: 80px;
+    background-color:Transparent;
+    border-radius: 40px;
+
+}
+button img {
+    width: 80px;
+    height: 60px;
+}

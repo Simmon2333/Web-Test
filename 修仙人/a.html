@@ -1,0 +1,59 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>修仙大法</title>
+<link href="a.css" rel="stylesheet" text="text/css">
+<script language ="JavaScript">
+<!--
+alert("少年，你想不想修仙？");
+-->
+function btn()
+        {
+          var music = document.getElementById("audio");
+          if(music.paused) {
+            music.play();
+          }else {
+            music.pause();
+          }
+        }
+</script>
+</head>
+<body>
+<div class="background">
+<marquee scrolldelay="800" scrollamount="100"><span style="font-weight: bolder;font-size: 25px;color: white;">
+	 你是张小凡，你来自21世纪。在一次对宇宙的探索中，因为时间虫洞你掉到了凌天大陆。这里灵气四溢，职业自由。但是这里有四种职业尤为珍贵，你决定选择其中一样，进行学习，成为此方面的顶尖人才。
+     请选择你的职业：</span></marquee> 
+<marquee behavior="alternate"><span style="font-weight: bolder;font-size: 20px;color: red;">
+	 请选择你的职业：</span></marquee>
+
+<div class="piclist">
+        <div class="picbox">
+            <div class="box front"><img src="images/magic.jpg" alt="" width="370" height="290"></div>
+            <div class="box back"><h2>&nbsp;&nbsp;&nbsp;&nbsp;<hhh><a href="fx.html" >法修</a></hhh><br>&nbsp;&nbsp;&nbsp;&nbsp;法修依靠灵根修行，金木水火土，集天地灵气于一身。
+				  <br>&nbsp;&nbsp;&nbsp;&nbsp;远战中的王者，以法证道也。</h2></div>
+        </div>
+	    <div class="picbox">
+            <div class="box front"><img src="images/sword.jpg" alt="" width="370" height="290"></div>
+            <div class="box back"><h2>&nbsp;&nbsp;&nbsp;&nbsp;<hhh><a href="jx.html" >剑修</a></hhh><br>&nbsp;&nbsp;&nbsp;&nbsp;剑修精神：唯剑，唯心，唯我。
+	              <br>&nbsp;&nbsp;&nbsp;&nbsp;剑者，踏破彼岸虚空，证遍诸天万界。唯，一剑尔。</h2></div>
+        </div>
+	    <div class="picbox">
+            <div class="box front"><img src="images/person.jpg" alt="" width="370" height="290"></div>
+            <div class="box back"><h2>&nbsp;&nbsp;&nbsp;&nbsp;<hhh><a href="rx.html" >人修</a></hhh><br>&nbsp;&nbsp;&nbsp;&nbsp;有人以法入道，有人以剑入道，还有人以己入道。人修就是这样的存在，他们混迹在凡人各大顶尖领域中，以苦修自己，达到人生巅峰得道成仙也。</h2></div>
+        </div>
+	    <div class="picbox">
+            <div class="box front"><img src="images/manong.jpg" alt="" width="370" height="290"></div>
+            <div class="box back"><h2>&nbsp;&nbsp;&nbsp;&nbsp;<hhh><a href="mx.html" >码修</a></hhh>
+			<br>&nbsp;&nbsp;&nbsp;&nbsp;码农，农者也。以码入道，力图掌握各大语言与算法。其顶层有攻破M国原子弹系统的超级黑客，其还有以机器人为傀儡的人工智能大师等等。码农之道可谓各显神通，八仙过海也。</h2></div>
+        </div>
+	</div>
+</div>
+  <audio id = "audio" autoplay = "autoplay" loop ="loop">
+		<source src = "mp34/权游.mp3" type="audio/mpeg">
+    </audio>
+    <button onClick="btn()" >
+      <img src="images/music.jpg" alt="">
+    </button>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* CSS Document */
+#m1 {
+	width:1000px;
+	height:300px;
+	margin:0 auto;
+	border-bottom: #86BFE9 1px dashed;}
+#mp4{width:300px;
+	height:260px;
+	float:left;}
+#mp3{width:460px;
+	height:260px;
+	background: url("images/hhh.jpg");
+	float:right;
+	line-height: 1.5;
+	padding:20px;}
+.p{float:left;
+	margin-right: 25px;}
+#m2{width:1000px; 
+	height: 170px;
+	margin:0 auto;}
+#m2-left{width:484px;
+	padding: 15px 15px 15px 0;
+	border-right: #CCC 1px dashed ;
+	background: url("images/hhh.jpg");
+	float:left;}
+#m2-left ul{list-style: url("images/p.jpg") }
+#m2-left ul li{line-height: 28px;
+	font-size: 16px;}
+#m2-right{width:484px;
+	padding: 15px 15px 15px 0;
+	border-right: #CCC 1px dashed ;
+	background: url("images/hhh.jpg");float:right;}	
+#m2-right ul{list-style: url("images/p.jpg") }
+#m2-right ul li{line-height: 28px;
+	font-size: 16px;}
+.fr{float:right;
+	color:lightskyblue}
+#foot{width:1000px;
+	height: 60px;
+	background: url("images/hhh.jpg");
+	margin:0 auto;
+	color:royalblue;
+	padding: 60px 0px;
+	text-align: center;}
+
+

@@ -1,0 +1,136 @@
+/* CSS Document */
+.background{
+  width: 100%;
+  height: 120vh;
+  animation: move 8s  infinite; /*自定义动画名称*/
+  /*!move：动画名称，10s：执行时间 
+     ease：执行的函数，infinite：代表执行次数，这里指无限次*!*/
+}
+@keyframes move {
+/**注意这几个图片大小一定要一样，否则会出现抖动现象*/
+/*这里的0%50%100%是相对于执行时间的，最后一个图片先播放*/
+  0%{
+    background: url('images/1.jpg') no-repeat;
+  	background-size:100% 100%;
+  	}
+  30%{
+  	background: url('images/2.jpg') no-repeat;
+  	background-size:100% 100%; 
+  	}
+  100%{
+  	background: url('images/77.jpeg') no-repeat;
+  	background-size:100% 100%; 
+  	}
+}
+        *{
+            list-style-type:none;
+            padding: 0;
+            margin: 0;
+        }
+       
+        .shell{
+            position: fixed;
+            width: 280px;
+            height: 700px;
+            background-color:#3C5A90;
+        }
+        .buttons{
+            margin: 60px 0;
+            color: #fff;
+        }
+        .li{
+            letter-spacing: 2px;
+            font: 600 17px '';
+            padding: 16px 52px;
+            transition: 0.3s;
+        }
+        .li::after{
+            content: '';
+            position: absolute;
+            left: 20px;
+            margin-top: -22px;
+            display: block;
+            width: 20px;
+            height: 20px;
+            background-color: #fff;
+            border-radius: 50%;
+        }
+        .buttons>li:hover{
+            background-color: #beb5df;
+        }
+        .li ul{
+            width: 0;
+            height: 530px;
+            padding: 60px 0;
+            position: absolute;
+            top: 0;
+            right: 0;
+            overflow: hidden;
+            background-color: #59699b;
+            transition: 0.3s;
+        }
+        .li ul li{
+            padding: 16px 24px;
+            transition: 0.3s;
+        }
+        .li:hover ul{
+            width: 228px;
+        }
+        .li ul li:hover{
+            background-color: #828eb9;
+        }
+		a{ text-decoration:none} 
+
+.flexible{
+    position:absolute;
+	left:28%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;/*如果位置够就会横行显示，不够则纵行显示*/
+    padding: 0px;
+}
+.flexible .card{
+    position: relative;
+    max-width: 300px;/*元素的最大宽度，会覆盖width*/
+    height: 215px;
+    background: #fff;
+    margin: 50px 30px;
+    padding: 20px 15px;/*控制文字在匡内*/
+    display: flex;
+    flex-direction: column;/*定义了所沿方向，column是正轴*/
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);/*元素框架上添加阴影*/
+    transition: 0.3s ease-in-out;
+}
+.flexible .card:hover{
+    height: 320px;
+}
+.flexible .card .imgBx{
+    position: relative;
+    width: 260px;
+    height: 200px;
+    top: -60px;
+    left: 20px;
+    z-index: 1;/*元素重叠时，该值越大，谁就会优先显示，auto自动是0*/
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+.flexible .card .imgBx img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+.flexible .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;/*设置是否可见，不改变其他元素的排版*/
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+.flexible .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -20px;
+    transition-delay: 0.1s;
+}

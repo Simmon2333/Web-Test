@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>剑修</title>
+<link href="jx.css" rel="stylesheet" text="text/css">
+<script type="text/javascript">
+ var index=0;
+ //改变图片
+function ChangeImg() {
+    index++;
+	var a=document.getElementsByClassName("img-slide");
+		if(index>=a.length) 
+		   index=0; 
+		for(var i=0;i<a.length;i++)
+		{ 
+			a[i].style.display='none';
+		   } 
+		    a[index].style.display='block'; 
+	       } //设置定时器，每隔两秒切换一张图片 
+	  setInterval(ChangeImg,1000); 
+</script>
+</head>
+<body>   
+    <div class="Container">
+        <div id="carousel">
+            <figure><img src="images/11.jpeg" alt=""></figure>
+            <figure><img src="images/12.jpeg" alt=""></figure>
+            <figure><img src="images/13.jpeg" alt=""></figure>
+            <figure><img src="images/14.gif" alt=""></figure>
+            <figure><img src="images/15.jpeg" alt=""></figure>
+            <figure><img src="images/16.jpeg" alt=""></figure>
+        </div>
+    </div>
+<nav>
+        <ul>
+            <li><a href="#">剑修门派</a>
+                <ul>
+                    <li><a href="#">崖山</a></li>
+                    <li><a href="#">风幽谷</a></li>
+                    <li><a href="#">蓬莱岛</a></li>
+                    <li><a href="#">玄天剑宗</a></li>
+                </ul>
+            </li>
+			<li><a href="#">剑修的剑</a>
+                <ul>
+					<li><a href="#">崖山剑</a></li>
+                    <li><a href="#">轩辕剑</a></li>
+                    <li><a href="#">赤霄</a></li>
+					<li><a href="#">龙泉剑</a></li>
+                </ul>
+            </li>
+            <li><a href="#">剑修排名</a>
+                <ul>
+                    <li><a href="#">千风幽</a></li>
+                    <li><a href="#">煌上煌</a></li>
+                    <li><a href="#">林天</a></li>
+                </ul>
+            </li>
+            <li><a href="#">剑修好穷</a></li>
+            <li><a href="a.html">重选，不修剑了</a></li>
+        </ul>
+    </nav>
+<div id="m2">
+<div id="m2-left">
+<center>
+<strong style="font-size: 25px;">江湖八卦</strong>
+</center>
+<ul>
+	<li><b>门派第一之争！</b><br>崖山vs风幽谷。</li>
+	<li><b>门派大比之争！</b><br>昔日好友为了门派荣耀而战!<br>究竟是人性的泯灭，还是道德的沦丧，尽在明日揭晓！</li>
+	<li><b>好一匹黑马，林天复仇归来！</b><br>
+		他会对之前欺辱过他的家族和人做出什么惨绝人寰的事呢？<br>
+		前方小徐为您实时播报。</li>
+	<li><b>林天VS千风幽！</b>买定离手，谁是第一剑仙！？</li>
+
+</ul></div>
+<div id="m2-right">
+<div class="imgBox">
+    <img class="img-slide img1" src="images/22.jpeg" alt="1">
+    <img class="img-slide img2" src="images/24.jpeg" alt="2">
+    <img class="img-slide img3" src="images/25.jpeg" alt="3"> 
+	<img class="img-slide img4" src="images/26.jpeg" alt="4"> 
+	<img class="img-slide img5" src="images/28.jpeg" alt="5"> 
+</div></div>
+</div>
+</body>
+</html>

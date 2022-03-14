@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>人修信息测试</title>
+<script language="javascript">
+function calculator(op)
+{
+var num1,num2,num3;
+num1=parseFloat(document.form.txtYW.value);
+num2=parseFloat(document.form.txtSX.value);
+num3=parseFloat(document.form.txtEN.value);
+	if(op=="+")
+		document.form.total.value=num1+num2+num3;
+	if(op=="/")
+		document.form.avg.value=(num1+num2+num3)/3;
+	if(document.form.total.value<180) alert("你可能需要郑重考虑一下是否修人呀?!");
+	else if(document.form.total.value>280) alert("大佬,苟富贵,勿相忘呀!!!");
+	else alert("革命尚未成功，同志仍需努力!!");
+	
+}
+<!--
+alert("你确定要成为一个人修了吗？");
+-->
+</script>
+</head>
+<body background="images/o.jpg" style=" background-repeat:no-repeat ;background-size:100% 100%;
+background-attachment: fixed;">
+<center>
+<strong style="font-size: 30px;">人修填写==基本表</strong>
+</center>
+<img src="images/p.jpg" alt="photo" width="400" height="400" style="float:left">
+<img src="images/b.jpg" alt="photo" width="400" height="400" style="float:right">
+<table align="center">
+	<tr>
+		<td ><label for="username">道号:</label></td>
+		<td ><input type="text" name="username" placeholder="请输入道号" id="username"></td>
+	</tr>
+	<tr>
+		<td ><label for="nation">门派:</label></td>
+		<td ><label><select name="nation">
+			<option value="1">阿里巴巴</option>
+			<option value="2">腾讯</option>
+			<option value="3">百度</option>
+			<option value="4">微软</option>
+			<option value="5">谷歌</option>
+			<option value="6">自立门派</option>
+			</select></label></td>
+	</tr>
+	<tr>
+		<td ><label for="password">门派密码:</label></td>
+		<td ><input type="password" name="password" placeholder="请输入密码" id="password"></td>
+	</tr>
+	<tr>
+		<td ><label for="Email">Email:</label></td>
+		<td ><input type="email" name="email" placeholder="请输入Email" id="Email"></td>
+	</tr>
+	<tr>
+		<td ><label for="rename">姓名:</label></td>
+		<td ><input type="text" name="rename" placeholder="请输入真实姓名" id="rename"></td>
+	</tr>
+	<tr>
+		<td><label for="Telphone">手机号:</label></td>
+		<td><input type="text" name="telphone" placeholder="请输入您的手机号" id="Telphone"></td>
+	</tr>
+	<tr>
+		<td><label>性别:</label></td>
+		<td>
+				<input type="radio" name="gender" value="male" checked>男
+				<input type="radio" name="gender" value="female">女
+		</td>
+	</tr>
+	<tr>
+		<td><label for="Birthday">出生日期:</label></td>
+		<td><input type="date" name="birthday" id="Birthday"></td>
+	</tr>
+	    <form name="form" method="get" action="">
+	<tr>
+	<th width="95">科目</th>
+	<th>成绩</th>
+	</tr>
+	<tr align="center">
+		<td height="24">语文</td>
+		<td width="129"><input name="txtYW" type="text" size="10"></td>
+	</tr>
+	<tr align="center">
+		<td height="29">数学</td>
+		<td ><input name="txtSX" type="text" size="10"></td>
+	</tr>
+	<tr align="center">
+		<td height="32">英语</td>
+		<td ><input name="txtEN" type="text" size="10"></td>
+	</tr>
+	<tr align="center">
+		<td><input name="btn1" type="button" value="总成绩" onClick="calculator('+')"></td>
+		<td><input name="total" type="text" size="10"></td>
+	</tr>
+	<tr align="center">
+		<td><input name="btn2" type="button" value="平均分" onClick="calculator('/')"></td>
+		<td><input name="avg" type="text" size="10"></td>
+	</tr>
+	</form>
+	<tr>
+		<td colspan="2" style="text-align: center;">
+			<input type="submit" value="注册" id="btn_sub">
+		</td>
+	</tr>
+</table>
+<p align="center">已有账号?<a href="#">立即登录</a></p>
+<p align="center">不想修人了！<a href="a.html">重来！</a></p>
+</body>
+</html>
